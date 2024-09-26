@@ -1,6 +1,6 @@
-name: 'The name of your action here'
+name: 'code-reviewer'
 description: 'Provide a description here'
-author: 'Your name or organization here'
+author: 'avila-tek'
 
 # Add your action's branding here. This will appear on the GitHub Marketplace.
 branding:
@@ -20,5 +20,5 @@ outputs:
     description: 'Your output description here'
 
 runs:
-  using: node20
+  using: node22
   main: dist/index.js

@@ -1,27 +1,32 @@
 {
-  "name": "typescript-action",
-  "description": "GitHub Actions TypeScript template",
-  "version": "0.0.0",
-  "author": "",
+  "name": "@avila-tek/code-reviewer",
+  "version": "0.1.0",
+  "description": "An AI github actions for code reviewing in pull request ",
+  "main": "dist/index.js",
+  "author": "Avila Tek <devops@avilatek.com>",
   "private": true,
-  "homepage": "https://github.com/actions/typescript-action",
+  "homepage": "https://github.com/Avila-Tek/code-reviewer",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/typescript-action.git"
+    "url": "git+https://github.com/Avila-Tek/code-reviewer.git"
   },
   "bugs": {
-    "url": "https://github.com/actions/typescript-action/issues"
+    "url": "https://github.com/Avila-Tek/code-reviewer/issues"
   },
   "keywords": [
     "actions",
     "node",
-    "setup"
+    "setup",
+    "AI",
+    "LLaMa",
+    "GitHub Action",
+    "Code Review"
   ],
   "exports": {
     ".": "./dist/index.js"
   },
   "engines": {
-    "node": ">=21"
+    "node": ">=20"
   },
   "scripts": {
     "bundle": "npm run format:write && npm run package",
@@ -66,16 +71,21 @@
     ]
   },
   "dependencies": {
-    "@actions/core": "^1.10.1"
+    "@actions/core": "^1.10.1",
+    "@actions/github": "^6.0.0",
+    "@ai-sdk/openai": "^0.0.62",
+    "ai": "^3.4.4"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.9.2",
     "@jest/globals": "^29.7.0",
     "@types/jest": "^29.5.13",
-    "@types/node": "^22.5.5",
-    "@typescript-eslint/eslint-plugin": "^8.6.0",
-    "@typescript-eslint/parser": "^8.6.0",
-    "@vercel/ncc": "^0.38.1",
-    "eslint": "^8.57.0",
+    "@types/node": "^22.7.3",
+    "@typescript-eslint/eslint-plugin": "^8.7.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "@vercel/ncc": "^0.38.2",
+    "dotenv": "^16.4.5",
+    "eslint": "^9.11.1",
     "eslint-plugin-jest": "^28.8.3",
     "eslint-plugin-jsonc": "^2.16.0",
     "eslint-plugin-prettier": "^5.2.1",
@@ -84,6 +94,8 @@
     "prettier": "^3.3.3",
     "prettier-eslint": "^16.3.0",
     "ts-jest": "^29.2.5",
+    "tsc-alias": "^1.8.10",
+    "tsx": "^4.19.1",
     "typescript": "^5.6.2"
   }
 }

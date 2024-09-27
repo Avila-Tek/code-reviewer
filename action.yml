@@ -1,5 +1,5 @@
 name: 'code-reviewer'
-description: This is a code reviewing tool to automate the process of analyzing pull request changes by retrieving code diffs, generating AI-based feedback, and posting detailed comments directly to the PR, streamlining code reviews and improving team velocity.'
+description: 'This code review tool automates analyzing pull requests by retrieving diffs, generating AI feedback, and posting comments to streamline reviews.'
 author: 'avila-tek'
 
 # Define your inputs here.
@@ -12,6 +12,10 @@ inputs:
     default: ${{ github.token }}
     description: 'GitHub token used to create the report comment. If not specified, the default GitHub actions token will be used'
 
+branding:
+  icon: 'code'
+  color: 'green'
+
 runs:
-  using: node22
+  using: node20
   main: dist/index.js

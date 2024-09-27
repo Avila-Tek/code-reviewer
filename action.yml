@@ -1,5 +1,5 @@
 name: 'at-code-checker'
-description: 'This code review tool automates analyzing pull requests by retrieving diffs, generating AI feedback, and posting comments to streamline reviews.'
+description: 'This tool automates PR reviews by analyzing diffs, generating AI feedback, and posting comments to streamline work'
 author: 'avila-tek'
 
 # Define your inputs here.

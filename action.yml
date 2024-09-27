@@ -1,23 +1,16 @@
 name: 'code-reviewer'
-description: 'Provide a description here'
+description: This is a code reviewing tool to automate the process of analyzing pull request changes by retrieving code diffs, generating AI-based feedback, and posting detailed comments directly to the PR, streamlining code reviews and improving team velocity.'
 author: 'avila-tek'
-
-# Add your action's branding here. This will appear on the GitHub Marketplace.
-branding:
-  icon: 'heart'
-  color: 'red'
 
 # Define your inputs here.
 inputs:
-  milliseconds:
-    description: 'Your input description here'
+  OPEN_AI_KEY:
+    description: 'OpenAI API Key used to connect with GPT models for feeding the changes and writting the comments'
     required: true
-    default: '1000'
 
-# Define your outputs here.
-outputs:
-  time:
-    description: 'Your output description here'
+  GITHUB_TOKEN:
+    default: ${{ github.token }}
+    description: 'GitHub token used to create the report comment. If not specified, the default GitHub actions token will be used'
 
 runs:
   using: node22

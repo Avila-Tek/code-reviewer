@@ -1,4 +1,4 @@
-name: 'code-reviewer'
+name: 'at-code-checker'
 description: 'This code review tool automates analyzing pull requests by retrieving diffs, generating AI feedback, and posting comments to streamline reviews.'
 author: 'avila-tek'
 

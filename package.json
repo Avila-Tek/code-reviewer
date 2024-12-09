@@ -70,7 +70,7 @@
   "dependencies": {
     "@actions/core": "^1.10.1",
     "@actions/github": "^6.0.0",
-    "@ai-sdk/openai": "^0.0.62",
+    "@ai-sdk/openai": "^1.0.7",
     "ai": "^3.4.4"
   },
   "devDependencies": {
